@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TelecomProject" >
+<listeners>
+		<listener class-name="utilities.Report" />
+	</listeners>
+	
+
+  <test thread-count="5" name="Chromer Browser Test">
+  <parameter name="browser" value="chrome"></parameter>
+      <classes>
+      <class name="testCases.TC_AddCustomer_001"/>
+      <class name="testCases.TC_AddTariffPlan_002"/>  
+      <class name="testCases.TC_AddTariffPlantoCustomer_003"/> 
+      <class name="testCases.TC_PayBilling_004"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="Edge Browser Test">
+  <parameter name="browser" value="edge"></parameter>
+      <classes>
+  	 <class name="testCases.TC_AddCustomer_001"/>
+      <class name="testCases.TC_AddTariffPlan_002"/>  
+      <class name="testCases.TC_AddTariffPlantoCustomer_003"/> 
+      <class name="testCases.TC_PayBilling_004"/> 
+      <class name="testCases.TC_AddCustomer_001"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Telecom Project -->

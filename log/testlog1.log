@@ -1,0 +1,381 @@
+2022-06-21 20:10:46,688 [main] INFO Telecom - Click of Add Customer Link
+2022-06-21 20:12:20,830 [main] INFO Telecom - Click of Add Customer Link
+2022-06-21 20:13:28,984 [main] INFO Telecom - Click on Add Customer Link
+2022-06-21 20:16:34,270 [main] INFO Telecom - Click on Add Customer Link
+2022-06-21 20:21:58,709 [main] INFO Telecom - Click on Add Customer Link
+2022-06-21 20:28:00,289 [main] INFO Telecom - Click on Add Customer Link
+2022-06-21 20:29:16,222 [main] INFO Telecom - Click on Add Customer Link
+2022-06-21 20:29:19,239 [main] INFO Telecom - Providing the customer details
+2022-06-21 20:30:04,371 [main] INFO Telecom - Click on Add Customer Link
+2022-06-21 20:30:07,392 [main] INFO Telecom - Providing the customer details
+2022-06-21 20:33:39,674 [main] INFO Telecom - Click on Add Customer Link
+2022-06-21 20:37:06,774 [main] INFO Telecom - Click on Add Customer Link
+2022-06-21 20:42:13,844 [main] INFO Telecom - Click on Add Customer Link
+2022-06-27 11:24:05,153 [main] INFO Telecom - Click on Add Customer Link
+2022-06-27 11:39:43,136 [main] INFO Telecom - Click on Add Customer Link
+2022-06-27 11:39:46,267 [main] INFO Telecom - Providing the customer details
+2022-06-27 11:42:04,120 [main] INFO Telecom - Click on Add Customer Link
+2022-06-27 11:42:07,208 [main] INFO Telecom - Providing the customer details
+2022-06-27 11:46:10,266 [main] INFO Telecom - Click on Add Customer Link
+2022-06-27 11:46:13,402 [main] INFO Telecom - Providing the customer details
+2022-06-27 11:48:51,992 [main] INFO Telecom - Click on Add Customer Link
+2022-06-27 11:48:55,106 [main] INFO Telecom - Providing the customer details
+2022-06-27 12:28:36,022 [main] INFO Telecom - Click on Add Customer Link
+2022-06-27 12:28:39,124 [main] INFO Telecom - Providing the customer details
+2022-06-27 12:38:15,038 [main] INFO Telecom - Click on Add Customer Link
+2022-06-27 12:38:18,165 [main] INFO Telecom - Providing the customer details
+2022-06-27 12:39:53,090 [main] INFO Telecom - Click on Add Customer Link
+2022-06-27 12:39:56,165 [main] INFO Telecom - Providing the customer details
+2022-06-27 12:40:59,961 [main] INFO Telecom - Click on Add Customer Link
+2022-06-27 12:41:03,094 [main] INFO Telecom - Providing the customer details
+2022-06-27 12:41:05,613 [main] INFO Telecom - Customer details submitted successfully...
+2022-06-27 12:41:05,637 [main] INFO Telecom - Test Case 001 is passed...
+2022-06-27 12:41:06,448 [main] INFO Telecom - Click of Home button
+2022-06-27 12:58:05,207 [main] INFO Telecom - Click on Add Customer Link
+2022-06-27 12:58:08,279 [main] INFO Telecom - Providing the customer details
+2022-06-27 12:58:10,667 [main] INFO Telecom - Customer details submitted successfully...
+2022-06-27 12:58:10,692 [main] INFO Telecom - Test Case 001 is passed...
+2022-06-27 12:58:11,500 [main] INFO Telecom - Click on Home button
+2022-06-27 12:58:12,234 [main] ERROR freemarker.runtime - Error executing FreeMarker template
+FreeMarker template error:
+Can't create date/time/datetime format based on format string "time". Reason given: Illegal pattern character 't'
+The blamed expression:
+==> report.startTime?datetime?string  [in template "spark/partials/navbar.ftl" at line 25, column 59]
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${report.startTime?datetime?string["$...  [in template "spark/partials/navbar.ftl" at line 25, column 57]
+	- Reached through: #include "partials/navbar.ftl"  [in template "spark/spark.spa.ftl" at line 22, column 7]
+----
+
+Java stack trace (for programmers):
+----
+freemarker.core._TemplateModelException: [... Exception message was already printed; see it above ...]
+	at freemarker.core.Environment.getTemplateDateFormat(Environment.java:2000)
+	at freemarker.core.Environment.formatDateToPlainText(Environment.java:1755)
+	at freemarker.core.BuiltInsForMultipleTypes$stringBI$DateFormatter.formatWith(BuiltInsForMultipleTypes.java:645)
+	at freemarker.core.BuiltInsForMultipleTypes$stringBI$DateFormatter.get(BuiltInsForMultipleTypes.java:639)
+	at freemarker.core.DynamicKeyName.dealWithStringKey(DynamicKeyName.java:164)
+	at freemarker.core.DynamicKeyName._eval(DynamicKeyName.java:84)
+	at freemarker.core.Expression.eval(Expression.java:101)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:100)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:63)
+	at freemarker.core.Environment.visit(Environment.java:370)
+	at freemarker.core.Environment.visitAndTransform(Environment.java:501)
+	at freemarker.core.CompressedBlock.accept(CompressedBlock.java:42)
+	at freemarker.core.Environment.visit(Environment.java:334)
+	at freemarker.core.Environment.include(Environment.java:2925)
+	at freemarker.core.Include.accept(Include.java:171)
+	at freemarker.core.Environment.visit(Environment.java:334)
+	at freemarker.core.Environment.visit(Environment.java:340)
+	at freemarker.core.Environment.process(Environment.java:313)
+	at freemarker.template.Template.process(Template.java:383)
+	at com.aventstack.extentreports.templating.FreemarkerTemplate.processTemplate(FreemarkerTemplate.java:52)
+	at com.aventstack.extentreports.templating.FreemarkerTemplate.getSource(FreemarkerTemplate.java:39)
+	at com.aventstack.extentreports.templating.FreemarkerTemplate.writeTemplate(FreemarkerTemplate.java:45)
+	at com.aventstack.extentreports.reporter.AbstractFileReporter.processTemplate(AbstractFileReporter.java:74)
+	at com.aventstack.extentreports.reporter.ExtentSparkReporter.flush(ExtentSparkReporter.java:149)
+	at com.aventstack.extentreports.reporter.ExtentSparkReporter.access$100(ExtentSparkReporter.java:27)
+	at com.aventstack.extentreports.reporter.ExtentSparkReporter$1.onNext(ExtentSparkReporter.java:121)
+	at com.aventstack.extentreports.reporter.ExtentSparkReporter$1.onNext(ExtentSparkReporter.java:113)
+	at io.reactivex.rxjava3.subjects.PublishSubject$PublishDisposable.onNext(PublishSubject.java:310)
+	at io.reactivex.rxjava3.subjects.PublishSubject.onNext(PublishSubject.java:226)
+	at com.aventstack.extentreports.ReactiveSubject.onFlush(ReactiveSubject.java:88)
+	at com.aventstack.extentreports.AbstractProcessor.onFlush(AbstractProcessor.java:85)
+	at com.aventstack.extentreports.ExtentReports.flush(ExtentReports.java:286)
+	at utilities.Report.onFinish(Report.java:45)
+	at org.testng.TestRunner.fireEvent(TestRunner.java:944)
+	at org.testng.TestRunner.afterRun(TestRunner.java:903)
+	at org.testng.TestRunner.run(TestRunner.java:606)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: freemarker.core.InvalidFormatParametersException: Illegal pattern character 't'
+	at freemarker.core.JavaTemplateDateFormatFactory.getJavaDateFormat(JavaTemplateDateFormatFactory.java:98)
+	at freemarker.core.JavaTemplateDateFormatFactory.get(JavaTemplateDateFormatFactory.java:53)
+	at freemarker.core.Environment.getTemplateDateFormatWithoutCache(Environment.java:2164)
+	at freemarker.core.Environment.getTemplateDateFormat(Environment.java:2093)
+	at freemarker.core.Environment.getTemplateDateFormat(Environment.java:1805)
+	at freemarker.core.Environment.getTemplateDateFormat(Environment.java:1991)
+	... 48 more
+Caused by: java.lang.IllegalArgumentException: Illegal pattern character 't'
+	at java.base/java.text.SimpleDateFormat.compile(SimpleDateFormat.java:849)
+	at java.base/java.text.SimpleDateFormat.initialize(SimpleDateFormat.java:657)
+	at java.base/java.text.SimpleDateFormat.<init>(SimpleDateFormat.java:628)
+	at freemarker.core.JavaTemplateDateFormatFactory.getJavaDateFormat(JavaTemplateDateFormatFactory.java:95)
+	... 53 more
+2022-06-27 12:59:58,967 [main] INFO Telecom - Click on Add Customer Link
+2022-06-27 13:00:02,052 [main] INFO Telecom - Providing the customer details
+2022-06-27 13:00:05,279 [main] INFO Telecom - Customer details submitted successfully...
+2022-06-27 13:00:05,298 [main] INFO Telecom - Test Case 001 is passed...
+2022-06-27 13:00:06,023 [main] INFO Telecom - Click on Home button
+2022-06-27 13:02:53,365 [main] INFO Telecom - Click on Add Customer Link
+2022-06-27 13:02:56,481 [main] INFO Telecom - Providing the customer details
+2022-06-27 13:03:06,188 [main] INFO Telecom - Customer details submitted successfully...
+2022-06-27 13:05:54,962 [main] INFO Telecom - Click on Add Customer Link
+2022-06-27 13:05:58,057 [main] INFO Telecom - Providing the customer details
+2022-06-27 13:06:00,373 [main] INFO Telecom - Customer details submitted successfully...
+2022-06-27 13:06:00,396 [main] INFO Telecom - Test Case 001 is passed...
+2022-06-27 13:06:00,574 [main] INFO Telecom - Click on Home button
+2022-06-27 13:09:56,505 [main] INFO Telecom - Click on Add Customer Link
+2022-06-27 13:09:59,611 [main] INFO Telecom - Providing the customer details
+2022-06-27 13:10:01,826 [main] INFO Telecom - Customer details submitted successfully...
+2022-06-27 13:10:01,853 [main] INFO Telecom - Test Case 001 is passed...
+2022-06-27 13:10:02,030 [main] INFO Telecom - Click on Home button
+2022-06-27 13:11:13,676 [main] INFO Telecom - Click on Add Customer Link
+2022-06-27 13:11:16,775 [main] INFO Telecom - Providing the customer details
+2022-06-27 13:11:19,776 [main] INFO Telecom - Customer details submitted successfully...
+2022-06-27 13:11:19,801 [main] INFO Telecom - Test Case 001 is passed...
+2022-06-27 13:11:20,533 [main] INFO Telecom - Click on Home button
+2022-06-27 13:23:39,621 [main] INFO Telecom - Click on Add Customer Link
+2022-06-27 13:23:42,710 [main] INFO Telecom - Providing the customer details
+2022-06-27 13:23:44,499 [main] INFO Telecom - Customer details submitted successfully...
+2022-06-27 13:26:10,331 [main] INFO Telecom - Click on Add Customer Link
+2022-06-27 13:26:13,412 [main] INFO Telecom - Providing the customer details
+2022-06-27 13:26:15,473 [main] INFO Telecom - Customer details submitted successfully...
+2022-06-27 13:28:32,380 [main] INFO Telecom - Click on Add Customer Link
+2022-06-27 13:28:35,432 [main] INFO Telecom - Providing the customer details
+2022-06-27 13:28:37,701 [main] INFO Telecom - Customer details submitted successfully...
+2022-06-27 19:26:11,197 [main] INFO Telecom - Click on Add Customer Link
+2022-06-27 19:26:14,257 [main] INFO Telecom - Providing the customer details
+2022-06-27 19:27:30,238 [main] INFO Telecom - Click on Add Customer Link
+2022-06-27 19:27:33,295 [main] INFO Telecom - Providing the customer details
+2022-06-27 19:27:35,108 [main] INFO Telecom - Customer details submitted successfully...
+2022-06-27 19:27:35,132 [main] INFO Telecom - Test Case 001 is passed...
+2022-06-27 19:27:35,945 [main] INFO Telecom - Click on Home button
+2022-06-27 19:29:08,201 [main] INFO Telecom - Click on Add Customer Link
+2022-06-27 19:29:11,253 [main] INFO Telecom - Providing the customer details
+2022-06-27 19:29:13,234 [main] INFO Telecom - Customer details submitted successfully...
+2022-06-27 19:54:34,453 [main] INFO Telecom - Click on Add Customer Link
+2022-06-27 19:54:37,503 [main] INFO Telecom - Providing the customer details
+2022-06-27 19:54:39,959 [main] INFO Telecom - Customer details submitted successfully...
+2022-06-27 19:54:39,982 [main] INFO Telecom - Test Case 001 is passed...
+2022-06-27 19:54:40,124 [main] INFO Telecom - Click on Home button
+2022-06-27 19:54:50,890 [main] INFO Telecom - Add Tariff Plans info
+2022-06-27 19:56:27,171 [main] INFO Telecom - Add Tariff Plans info
+2022-06-27 19:57:44,940 [main] INFO Telecom - Add Tariff Plans info
+2022-06-27 19:57:48,691 [main] INFO Telecom - Tariff Plans info is added
+2022-06-27 20:00:13,879 [main] INFO Telecom - Add Tariff Plans info
+2022-06-27 20:00:17,518 [main] INFO Telecom - Tariff Plans info is added
+2022-06-27 20:01:06,667 [main] INFO Telecom - Add Tariff Plans info
+2022-06-27 20:01:11,822 [main] INFO Telecom - Tariff Plans info is added
+2022-06-27 20:01:14,865 [main] INFO Telecom - Test Case 002 is passed...
+2022-06-27 20:01:16,108 [main] INFO Telecom - Click on Home button
+2022-06-27 20:01:58,833 [main] INFO Telecom - Click on Add Customer Link
+2022-06-27 20:02:01,889 [main] INFO Telecom - Providing the customer details
+2022-06-27 20:02:03,822 [main] INFO Telecom - Customer details submitted successfully...
+2022-06-27 20:02:03,837 [main] INFO Telecom - Test Case 001 is passed...
+2022-06-27 20:02:03,951 [main] INFO Telecom - Click on Home button
+2022-06-27 20:02:10,717 [main] INFO Telecom - Add Tariff Plans info
+2022-06-27 20:02:15,277 [main] INFO Telecom - Tariff Plans info is added
+2022-06-27 20:02:18,306 [main] INFO Telecom - Test Case 002 is passed...
+2022-06-27 20:02:18,436 [main] INFO Telecom - Click on Home button
+2022-06-27 20:06:10,374 [main] INFO Telecom - Click on Add Customer Link
+2022-06-27 20:06:13,430 [main] INFO Telecom - Providing the customer details
+2022-06-27 20:06:15,674 [main] INFO Telecom - Customer details submitted successfully...
+2022-06-27 20:06:15,687 [main] INFO Telecom - Test Case 001 is passed...
+2022-06-27 20:06:16,459 [main] INFO Telecom - Click on Home button
+2022-06-27 20:06:27,036 [main] INFO Telecom - Add Tariff Plans info
+2022-06-27 20:43:48,026 [main] INFO Telecom - Click on Add Tariff Plan to Customer
+2022-06-27 20:44:42,144 [main] INFO Telecom - Click on Add Tariff Plan to Customer
+2022-06-27 20:46:00,295 [main] INFO Telecom - Click on Add Tariff Plan to Customer
+2022-06-27 20:49:29,272 [main] INFO Telecom - Click on Add Tariff Plan to Customer
+2022-06-27 20:49:34,715 [main] INFO Telecom - Customer ID is entered
+2022-06-27 20:49:37,717 [main] INFO Telecom - Select Plan and click on add plan to customer
+2022-06-27 20:50:22,986 [main] INFO Telecom - Click on Add Tariff Plan to Customer
+2022-06-27 20:50:27,189 [main] INFO Telecom - Customer ID is entered
+2022-06-27 20:50:30,195 [main] INFO Telecom - Select Plan and click on add plan to customer
+2022-06-27 20:52:14,092 [main] INFO Telecom - Click on Add Tariff Plan to Customer
+2022-06-27 20:52:40,546 [main] INFO Telecom - Click on Add Tariff Plan to Customer
+2022-06-27 20:53:15,914 [main] INFO Telecom - Click on Add Tariff Plan to Customer
+2022-06-27 20:53:20,297 [main] INFO Telecom - Customer ID is entered
+2022-06-27 20:53:23,302 [main] INFO Telecom - Select Plan and click on add plan to customer
+2022-06-27 20:53:28,229 [main] INFO Telecom - Test Case 003 is passed...
+2022-06-27 20:53:29,089 [main] INFO Telecom - Click on Home button
+2022-06-27 21:09:32,610 [main] INFO Telecom - Check Customer Billing Status
+2022-06-27 21:09:35,656 [main] INFO Telecom - Enter Customer ID
+2022-06-27 21:11:48,628 [main] INFO Telecom - Check Customer Billing Status
+2022-06-27 21:11:51,706 [main] INFO Telecom - Enter Customer ID
+2022-06-27 21:13:23,155 [main] INFO Telecom - Check Customer Billing Status
+2022-06-27 21:13:26,246 [main] INFO Telecom - Enter Customer ID
+2022-06-27 21:15:40,230 [main] INFO Telecom - Check Customer Billing Status
+2022-06-27 21:15:43,324 [main] INFO Telecom - Enter Customer ID
+2022-06-27 21:15:48,047 [main] INFO Telecom - Test Case 004 is passed...
+2022-06-27 21:17:05,824 [main] INFO Telecom - Click on Add Customer Link
+2022-06-27 21:17:08,903 [main] INFO Telecom - Providing the customer details
+2022-06-27 21:17:10,918 [main] INFO Telecom - Customer details submitted successfully...
+2022-06-27 21:17:10,936 [main] INFO Telecom - Test Case 001 is passed...
+2022-06-27 21:17:11,908 [main] INFO Telecom - Click on Home button
+2022-06-27 21:17:22,054 [main] INFO Telecom - Add Tariff Plans info
+2022-06-27 21:17:36,486 [main] INFO Telecom - Tariff Plans info is added
+2022-06-27 21:17:47,807 [main] INFO Telecom - Click on Add Tariff Plan to Customer
+2022-06-27 21:17:59,481 [main] INFO Telecom - Check Customer Billing Status
+2022-06-27 21:18:02,522 [main] INFO Telecom - Enter Customer ID
+2022-06-27 21:18:07,034 [main] INFO Telecom - Test Case 004 is passed...
+2022-06-27 21:24:27,070 [main] INFO Telecom - Click on Add Customer Link
+2022-06-27 21:24:30,256 [main] INFO Telecom - Providing the customer details
+2022-06-27 21:24:32,572 [main] INFO Telecom - Customer details submitted successfully...
+2022-06-27 21:24:32,587 [main] INFO Telecom - Test Case 001 is passed...
+2022-06-27 21:24:33,556 [main] INFO Telecom - Click on Home button
+2022-06-27 21:24:43,867 [main] INFO Telecom - Add Tariff Plans info
+2022-06-27 21:24:55,909 [main] INFO Telecom - Tariff Plans info is added
+2022-06-27 21:25:09,208 [main] INFO Telecom - Click on Add Tariff Plan to Customer
+2022-06-27 21:25:14,062 [main] INFO Telecom - Customer ID is entered
+2022-06-27 21:25:17,077 [main] INFO Telecom - Select Plan and click on add plan to customer
+2022-06-27 21:25:21,434 [main] INFO Telecom - Test Case 003 is passed...
+2022-06-27 21:25:22,415 [main] INFO Telecom - Click on Home button
+2022-06-27 21:25:33,335 [main] INFO Telecom - Check Customer Billing Status
+2022-06-27 21:25:36,398 [main] INFO Telecom - Enter Customer ID
+2022-06-27 21:31:17,780 [main] INFO Telecom - Click on Add Customer Link
+2022-06-27 21:31:20,863 [main] INFO Telecom - Providing the customer details
+2022-06-27 21:31:24,977 [main] INFO Telecom - Customer details submitted successfully...
+2022-06-27 21:31:24,998 [main] INFO Telecom - Test Case 001 is passed...
+2022-06-27 21:31:25,168 [main] INFO Telecom - Click on Home button
+2022-06-27 21:31:37,534 [main] INFO Telecom - Add Tariff Plans info
+2022-06-27 21:31:43,120 [main] INFO Telecom - Tariff Plans info is added
+2022-06-27 21:31:46,138 [main] INFO Telecom - Test Case 002 is passed...
+2022-06-27 21:31:47,379 [main] INFO Telecom - Click on Home button
+2022-06-27 21:32:07,086 [main] INFO Telecom - Click on Add Tariff Plan to Customer
+2022-06-27 21:33:01,029 [main] INFO Telecom - Check Customer Billing Status
+2022-06-27 21:33:04,116 [main] INFO Telecom - Enter Customer ID
+2022-06-27 21:33:39,513 [main] INFO Telecom - Click on Add Customer Link
+2022-06-27 21:33:42,597 [main] INFO Telecom - Providing the customer details
+2022-06-27 21:34:11,880 [main] INFO Telecom - Add Tariff Plans info
+2022-06-27 21:34:20,106 [main] INFO Telecom - Tariff Plans info is added
+2022-06-27 21:34:23,139 [main] INFO Telecom - Test Case 002 is passed...
+2022-06-27 21:34:25,081 [main] INFO Telecom - Click on Home button
+2022-06-27 21:34:39,847 [main] INFO Telecom - Click on Add Tariff Plan to Customer
+2022-06-27 21:34:58,861 [main] INFO Telecom - Check Customer Billing Status
+2022-06-27 21:35:01,957 [main] INFO Telecom - Enter Customer ID
+2022-06-27 21:37:37,256 [TestNG-tests-1] INFO Telecom - Check Customer Billing Status
+2022-06-27 21:38:07,955 [TestNG-tests-1] INFO Telecom - Check Customer Billing Status
+2022-06-27 21:38:44,945 [TestNG-test=Chromer Browser Test-1] INFO Telecom - Check Customer Billing Status
+2022-06-27 21:38:48,032 [TestNG-test=Chromer Browser Test-1] INFO Telecom - Enter Customer ID
+2022-06-27 21:38:53,549 [TestNG-test=Chromer Browser Test-1] INFO Telecom - Test Case 004 is passed...
+2022-06-27 21:39:04,680 [TestNG-test=Edge Browser Test-1] INFO Telecom - Click on Add Customer Link
+2022-06-27 21:39:07,769 [TestNG-test=Edge Browser Test-1] INFO Telecom - Providing the customer details
+2022-06-27 21:39:10,845 [TestNG-test=Edge Browser Test-1] INFO Telecom - Customer details submitted successfully...
+2022-06-27 21:39:10,859 [TestNG-test=Edge Browser Test-1] INFO Telecom - Test Case 001 is passed...
+2022-06-27 21:39:11,873 [TestNG-test=Edge Browser Test-1] INFO Telecom - Click on Home button
+2022-06-28 19:02:37,226 [TestNG-test=Chromer Browser Test-1] INFO Telecom - Check Customer Billing Status
+2022-06-28 19:02:40,304 [TestNG-test=Chromer Browser Test-1] INFO Telecom - Enter Customer ID
+2022-06-28 19:02:52,028 [TestNG-test=Edge Browser Test-1] INFO Telecom - Click on Add Customer Link
+2022-06-28 19:02:55,116 [TestNG-test=Edge Browser Test-1] INFO Telecom - Providing the customer details
+2022-06-28 19:02:57,580 [TestNG-test=Edge Browser Test-1] INFO Telecom - Customer details submitted successfully...
+2022-06-28 19:02:57,602 [TestNG-test=Edge Browser Test-1] INFO Telecom - Test Case 001 is passed...
+2022-06-28 19:02:58,541 [TestNG-test=Edge Browser Test-1] INFO Telecom - Click on Home button
+2022-06-28 19:07:51,712 [TestNG-test=Chromer Browser Test-1] INFO Telecom - Check Customer Billing Status
+2022-06-28 19:07:54,775 [TestNG-test=Chromer Browser Test-1] INFO Telecom - Enter Customer ID
+2022-06-28 19:08:00,114 [TestNG-test=Chromer Browser Test-1] INFO Telecom - Test Case 004 is passed...
+2022-06-28 19:08:09,415 [TestNG-test=Edge Browser Test-1] INFO Telecom - Click on Add Customer Link
+2022-06-28 19:08:12,499 [TestNG-test=Edge Browser Test-1] INFO Telecom - Providing the customer details
+2022-06-28 19:08:15,641 [TestNG-test=Edge Browser Test-1] INFO Telecom - Customer details submitted successfully...
+2022-06-28 19:08:15,655 [TestNG-test=Edge Browser Test-1] INFO Telecom - Test Case 001 is passed...
+2022-06-28 19:08:16,596 [TestNG-test=Edge Browser Test-1] INFO Telecom - Click on Home button
+2022-06-28 19:11:07,880 [TestNG-test=Chromer Browser Test-1] INFO Telecom - Click on Add Customer Link
+2022-06-28 19:11:09,090 [TestNG-test=Chromer Browser Test-2] INFO Telecom - Add Tariff Plans info
+2022-06-28 19:11:15,604 [TestNG-test=Chromer Browser Test-1] INFO Telecom - Providing the customer details
+2022-06-28 19:11:25,057 [TestNG-test=Edge Browser Test-1] INFO Telecom - Add Tariff Plans info
+2022-06-28 19:11:26,210 [TestNG-test=Edge Browser Test-3] INFO Telecom - Check Customer Billing Status
+2022-06-28 19:13:10,963 [TestNG-tests-2] INFO Telecom - Add Tariff Plans info
+2022-06-28 19:13:11,326 [TestNG-tests-1] INFO Telecom - Click on Add Customer Link
+2022-06-28 19:13:25,055 [TestNG-tests-1] INFO Telecom - Add Tariff Plans info
+2022-06-28 19:13:30,217 [TestNG-tests-1] INFO Telecom - Tariff Plans info is added
+2022-06-28 19:13:33,251 [TestNG-tests-1] INFO Telecom - Test Case 002 is passed...
+2022-06-28 19:13:34,039 [TestNG-tests-1] INFO Telecom - Click on Home button
+2022-06-28 19:13:45,520 [TestNG-tests-1] INFO Telecom - Click on Add Tariff Plan to Customer
+2022-06-28 19:13:50,438 [TestNG-tests-1] INFO Telecom - Customer ID is entered
+2022-06-28 19:13:53,444 [TestNG-tests-1] INFO Telecom - Select Plan and click on add plan to customer
+2022-06-28 19:13:57,497 [TestNG-tests-1] INFO Telecom - Test Case 003 is passed...
+2022-06-28 19:13:58,207 [TestNG-tests-1] INFO Telecom - Click on Home button
+2022-06-28 19:14:09,775 [TestNG-tests-1] INFO Telecom - Check Customer Billing Status
+2022-06-28 19:14:12,829 [TestNG-tests-1] INFO Telecom - Enter Customer ID
+2022-06-28 19:14:18,312 [TestNG-tests-1] INFO Telecom - Test Case 004 is passed...
+2022-06-28 19:15:30,915 [main] INFO Telecom - Click on Add Customer Link
+2022-06-28 19:15:34,013 [main] INFO Telecom - Providing the customer details
+2022-06-28 19:15:37,749 [main] INFO Telecom - Customer details submitted successfully...
+2022-06-28 19:15:37,785 [main] INFO Telecom - Test Case 001 is passed...
+2022-06-28 19:15:49,311 [main] INFO Telecom - Add Tariff Plans info
+2022-06-28 19:16:02,953 [main] INFO Telecom - Click on Add Tariff Plan to Customer
+2022-06-28 19:16:13,049 [main] INFO Telecom - Check Customer Billing Status
+2022-06-28 19:16:16,128 [main] INFO Telecom - Enter Customer ID
+2022-06-28 19:16:20,599 [main] INFO Telecom - Test Case 004 is passed...
+2022-06-28 19:16:27,067 [main] INFO Telecom - Click on Add Customer Link
+2022-06-28 19:16:30,155 [main] INFO Telecom - Providing the customer details
+2022-06-28 19:16:32,457 [main] INFO Telecom - Customer details submitted successfully...
+2022-06-28 19:16:32,469 [main] INFO Telecom - Test Case 001 is passed...
+2022-06-28 19:16:33,319 [main] INFO Telecom - Click on Home button
+2022-06-28 19:16:39,806 [main] INFO Telecom - Add Tariff Plans info
+2022-06-28 19:16:44,404 [main] INFO Telecom - Tariff Plans info is added
+2022-06-28 19:16:47,428 [main] INFO Telecom - Test Case 002 is passed...
+2022-06-28 19:16:48,318 [main] INFO Telecom - Click on Home button
+2022-06-28 19:16:55,098 [main] INFO Telecom - Click on Add Tariff Plan to Customer
+2022-06-28 19:17:06,295 [main] INFO Telecom - Check Customer Billing Status
+2022-06-28 19:17:09,374 [main] INFO Telecom - Enter Customer ID
+2022-06-28 19:20:34,016 [main] INFO Telecom - Click on Add Customer Link
+2022-06-28 19:20:37,096 [main] INFO Telecom - Providing the customer details
+2022-06-28 19:20:38,883 [main] INFO Telecom - Customer details submitted successfully...
+2022-06-28 19:28:27,997 [main] INFO Telecom - Click on Add Customer Link
+2022-06-28 19:28:31,068 [main] INFO Telecom - Providing the customer details
+2022-06-28 19:28:44,659 [main] INFO Telecom - Customer details submitted successfully...
+2022-06-28 19:29:33,304 [main] INFO Telecom - Click on Add Customer Link
+2022-06-28 19:29:36,371 [main] INFO Telecom - Providing the customer details
+2022-06-28 19:29:45,433 [main] INFO Telecom - Add Tariff Plans info
+2022-06-28 19:29:50,102 [main] INFO Telecom - Tariff Plans info is added
+2022-06-28 19:55:00,248 [main] INFO Telecom - Click on Add Customer Link
+2022-06-28 19:55:03,342 [main] INFO Telecom - Providing the customer details
+2022-06-28 19:55:05,718 [main] INFO Telecom - Customer details submitted successfully...
+2022-06-28 19:55:05,743 [main] INFO Telecom - Test Case 001 is passed...
+2022-06-28 19:55:05,927 [main] INFO Telecom - Click on Home button
+2022-06-28 19:55:17,465 [main] INFO Telecom - Add Tariff Plans info
+2022-06-28 19:55:22,683 [main] INFO Telecom - Tariff Plans info is added
+2022-06-28 19:55:25,708 [main] INFO Telecom - Test Case 002 is passed...
+2022-06-28 19:55:26,579 [main] INFO Telecom - Click on Home button
+2022-06-28 19:57:28,326 [main] INFO Telecom - Click on Add Customer Link
+2022-06-28 19:57:31,527 [main] INFO Telecom - Providing the customer details
+2022-06-28 19:57:34,851 [main] INFO Telecom - Customer details submitted successfully...
+2022-06-28 19:57:35,004 [main] INFO Telecom - Test Case 001 is passed...
+2022-06-28 19:57:35,942 [main] INFO Telecom - Click on Home button
+2022-06-28 19:57:47,754 [main] INFO Telecom - Add Tariff Plans info
+2022-06-28 19:57:53,432 [main] INFO Telecom - Tariff Plans info is added
+2022-06-28 19:57:56,454 [main] INFO Telecom - Test Case 002 is passed...
+2022-06-28 19:57:57,245 [main] INFO Telecom - Click on Home button
+2022-06-28 20:02:29,936 [main] INFO Telecom - Click on Add Customer Link
+2022-06-28 20:02:33,030 [main] INFO Telecom - Providing the customer details
+2022-06-28 20:02:35,676 [main] INFO Telecom - Customer details submitted successfully...
+2022-06-28 20:02:35,689 [main] INFO Telecom - Test Case 001 is passed...
+2022-06-28 20:02:36,774 [main] INFO Telecom - Click on Home button
+2022-06-28 20:02:48,702 [main] INFO Telecom - Add Tariff Plans info
+2022-06-28 20:02:54,692 [main] INFO Telecom - Tariff Plans info is added
+2022-06-28 20:02:57,710 [main] INFO Telecom - Test Case 002 is passed...
+2022-06-28 20:02:58,901 [main] INFO Telecom - Click on Home button
+2022-06-28 20:03:10,988 [main] INFO Telecom - Click on Add Tariff Plan to Customer
+2022-06-28 20:03:24,110 [main] INFO Telecom - Customer ID is entered
+2022-06-28 20:03:27,123 [main] INFO Telecom - Select Plan and click on add plan to customer
+2022-06-28 20:05:27,869 [main] INFO Telecom - Click on Add Customer Link
+2022-06-28 20:05:30,947 [main] INFO Telecom - Providing the customer details
+2022-06-28 20:05:44,502 [main] INFO Telecom - Add Tariff Plans info
+2022-06-28 20:05:49,424 [main] INFO Telecom - Tariff Plans info is added
+2022-06-28 20:05:52,439 [main] INFO Telecom - Test Case 002 is passed...
+2022-06-28 20:05:53,123 [main] INFO Telecom - Click on Home button
+2022-06-28 20:06:03,939 [main] INFO Telecom - Click on Add Tariff Plan to Customer
+2022-06-28 20:06:08,729 [main] INFO Telecom - Customer ID is entered
+2022-06-28 20:06:11,746 [main] INFO Telecom - Select Plan and click on add plan to customer
+2022-06-28 20:06:15,817 [main] INFO Telecom - Test Case 003 is passed...
+2022-06-28 20:06:16,516 [main] INFO Telecom - Click on Home button
+2022-06-28 20:06:27,448 [main] INFO Telecom - Check Customer Billing Status
+2022-06-28 20:06:30,499 [main] INFO Telecom - Enter Customer ID
+2022-06-28 20:06:35,237 [main] INFO Telecom - Test Case 004 is passed...
+2022-06-28 20:10:51,070 [main] INFO Telecom - Click on Add Customer Link
+2022-06-28 20:10:54,144 [main] INFO Telecom - Providing the customer details
+2022-06-28 20:10:56,439 [main] INFO Telecom - Customer details submitted successfully...
